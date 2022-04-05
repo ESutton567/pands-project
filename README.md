@@ -1,5 +1,56 @@
 # pands-project
 
-# Author: Éilis Sutton
+## Background
 
-This ReadMe file ia an accompaniment to a project I completed as part of my Higher Diploma in in Computing in Data Analytics
+
+This ReadMe file is an accompaniment to a project I completed as part of my Higher Diploma in in Computing in Data Analytics
+
+The overall aim of this task is to research the well-known [Fisher's Iris data set](https://en.wikipedia.org/wiki/Iris_flower_data_set).
+
+The information in this ReadMe file covers the work necessary to meet the individual objectives set within this task and includes: 
+* A summary of the data set
+* Addition of the data set to this repository
+* A program called analysis.py that explores different types of data analysis of the data set
+
+STEPS
+* Research the data set online and provide a summary
+* Add the data set to this repository
+* Write a program called analysis.py that:
+  * Outputs a summary of each variable to a single text file
+  * Saves a histogram of each variable to png files
+  * Outputs a scatter plot of each pair of variables
+  * Performs any other analysis appropriate analysis
+    * Look at what others have done and include interesting analyses
+    * Look at what others have done for other data sets and see if it can be applied to this one
+
+
+## Fisher's Iris data set
+
+This data set is a well-known benchmark mulivariate data set used for testing out and validating programs <sup>1,2</sup>. It was developed by Ronald Fisher, a statistician and biologist<sup>3</sup>, whose stauch support of eugenics will forever overshadow any contributions he made to his field<sup>4,5</sup>. Fisher developed the data set in 1936 as an example of a linear discriminant analysis<sup>6</sup>.
+
+Nowadays the data set is commonly used as a test case in machine learning techniques<sup>7</sup>. The data set itself contains 50 instances each of 3 classes (types) of iris plant<sup>8</sup> for a total of 150 instances, and can be found [here](https://www.kaggle.com/datasets/arshid/iris-flower-dataset?select=IRIS.csv)<sup>9</sup>. 
+
+"One class is linearly separable from the other 2; the latter are NOT linearly separable from each other."[(reword or expand on)](https://archive.ics.uci.edu/ml/datasets/iris).
+
+
+
+
+
+
+
+
+
+
+
+References
+1. Yen GG, Meesad P. Constructing a fuzzy rule-based system using the ILFN network and Genetic Algorithm. Int J Neural Syst. 2001 Oct;11(5):427-43. doi: 10.1142/S0129065701000618. PMID: 11709810.
+2. Woods RP, Hansen LK, Strother S. How many separable sources? Model selection in independent components analysis. PLoS One. 2015 Mar 26;10(3):e0118877. doi: 10.1371/journal.pone.0118877. PMID: 25811988; PMCID: PMC4374758.
+3. https://en.wikipedia.org/wiki/Ronald_Fisher
+4. Blacker, C.P. (1931). "The sterilization proposals: A history of their development". Eugen Rev. 22 (4): 240. PMC 2984995. PMID 21259955. "Amemorandum was accordingly circulated to the Council signed by Dr. R.A. Fisher, Professor Huxley, Dr. J.A. Ryle, Mr. E.J. Lidbetter, and myself, asking for authorization to form a sub-committee, the aim of which would be to secure the legalization of eugenics sterilization. The memorandum was unanimously approved by the Council, and in this way the nucleus of the existing Committee for Legalizing Eugenic Sterilization was formed."
+5. "Report of Committee for Legalizing Eugenic Sterilization". Postgraduate Medical Journal. 6 (61): 13. 1930. doi:10.1136/pgmj.6.61.13. PMC 2531824.
+6. FISHER, R.A. (1936), THE USE OF MULTIPLE MEASUREMENTS IN TAXONOMIC PROBLEMS. Annals of Eugenics, 7: 179-188. https://doi.org/10.1111/j.1469-1809.1936.tb02137.x
+7. "UCI Machine Learning Repository: Iris Data Set". archive.ics.uci.edu. Retrieved 2017-12-01.
+8. https://archive.ics.uci.edu/ml/datasets/iris
+9. https://www.kaggle.com/datasets/arshid/iris-flower-dataset?select=IRIS.csv
+
+
