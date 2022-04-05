@@ -28,7 +28,7 @@ STEPS
 
 This data set is a well-known benchmark mulivariate data set used for testing out and validating programs <sup>1,2</sup>. It was developed by Ronald Fisher, a statistician and biologist<sup>3</sup>, whose stauch support of eugenics will forever overshadow any contributions he made to his field<sup>4,5</sup>. Fisher developed the data set in 1936 as an example of a linear discriminant analysis<sup>6</sup>.
 
-Nowadays the data set is commonly used as a test case in machine learning techniques<sup>7</sup>. The data set itself contains 50 instances each of 3 classes (types) of iris plant<sup>8</sup> for a total of 150 instances, and can be found [here](https://www.kaggle.com/datasets/arshid/iris-flower-dataset?select=IRIS.csv)<sup>9</sup>. 
+Nowadays the data set is commonly used as a test case in machine learning techniques<sup>7</sup>. The data set itself contains 50 instances each of 3 classes (types) of iris plant<sup>8</sup> for a total of 150 instances, and can be found [here](https://archive.ics.uci.edu/ml/datasets/iris)<sup>9</sup>. 
 
 "One class is linearly separable from the other 2; the latter are NOT linearly separable from each other."[(reword or expand on)](https://archive.ics.uci.edu/ml/datasets/iris).
 
