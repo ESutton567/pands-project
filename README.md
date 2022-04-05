@@ -32,11 +32,11 @@ Nowadays the data set is commonly used as a test case in machine learning techni
 
 The information in the data set is laid out as follows<sup>10</sup>:
 
-|Sepal length   |Sepal Width   |Petal Length  | Petal Width   | Species   │
-|    :---       |     :---     |   :---       |    :---       |  ---:     │
-| 50 data points|50 data points|50 data points| 50 data points| setosa    │
-| 50 data points|50 data points|50 data points| 50 data points| versicolor│
-| 50 data points|50 data points|50 data points| 50 data points| virginica │
+| Sepal length   | Sepal Width    | Petal Length  | Petal Width   | Species   |
+|:---------------|:---------------|:--------------|:--------------|----------:|
+| 50 data points | 50 data points | 50 data points| 50 data points| setosa    |
+| 50 data points | 50 data points | 50 data points| 50 data points| versicolor|
+| 50 data points | 50 data points | 50 data points| 50 data points| virginica |
 
 "One class is linearly separable from the other 2; the latter are NOT linearly separable from each other."[(reword or expand on)](https://archive.ics.uci.edu/ml/datasets/iris).
 
