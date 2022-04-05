@@ -30,6 +30,14 @@ This data set is a well-known benchmark mulivariate data set used for testing ou
 
 Nowadays the data set is commonly used as a test case in machine learning techniques<sup>7</sup>. The data set itself contains 50 instances each of 3 classes (types) of iris plant<sup>8</sup> for a total of 150 instances, and can be found [here](https://archive.ics.uci.edu/ml/datasets/iris)<sup>9</sup>. 
 
+The information in the data set is laid out as follows<sup>10</sup>:
+
+|Sepal length   |Sepal Width   |Petal Length  | Petal Width   | Species   │
+|    :---       |     :---     |   :---       |    :---       |  ---:     │
+| 50 data points|50 data points|50 data points| 50 data points| setosa    │
+| 50 data points|50 data points|50 data points| 50 data points| versicolor│
+| 50 data points|50 data points|50 data points| 50 data points| virginica │
+
 "One class is linearly separable from the other 2; the latter are NOT linearly separable from each other."[(reword or expand on)](https://archive.ics.uci.edu/ml/datasets/iris).
 
 
@@ -52,5 +60,6 @@ References
 7. "UCI Machine Learning Repository: Iris Data Set". archive.ics.uci.edu. Retrieved 2017-12-01.
 8. https://archive.ics.uci.edu/ml/datasets/iris
 9. https://www.kaggle.com/datasets/arshid/iris-flower-dataset?select=IRIS.csv
+10. https://gist.github.com/curran/a08a1080b88344b0c8a7
 
 
