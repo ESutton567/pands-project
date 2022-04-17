@@ -5,6 +5,7 @@
 import pandas as pd
 import re
 import csv
+import matplotlib.pyplot as plt
 
 path = '../pands-project/'
 filename = path + 'iris.data'
@@ -26,26 +27,15 @@ with open('irisVariablesSummary.txt', 'w') as f:
         f.write(line)
         f.write('\n')
 
-#def summary(stats):
-#    return df.describe()
-
-# make pivot table to aggregate species values
-df = df.pivot_table(values='Sepal Length', index=['Species'],aggfunc='describe')
-print(df)
-
-text  = df
-#summary = df.describe()
-#print(summary)
-
-#meanValues = df.groupby('Sepal Length').mean()
-#print(meanValues)
+summary = df.describe()
+print(summary)
 
 with open('irisVariablesSummary.txt', 'a') as f:
     #for lines in df: #=> code not working
     #infile.readlines(df):
     #writer = csv.writer(f)
     #writer.writerows('\n'.join(df))
-    f.writelines('\n'.join(text))
+    f.writelines('\n'.join(summary))
 
 
 # write to the new txt file
@@ -56,17 +46,14 @@ with open('irisVariablesSummary.txt', 'a') as f:
 #f = open("iris.data", "r")
 
 
+# task 2: The below code saves a histogram of each variable to png files
 
 
 
 
-#print(f.read())
-
-
-# The below code saves a histogram of each variable to png files
 
 # The below code outputs a scatter plot of each pair of variables
 
 # The below code ......
 
-# The below code prints out the average of each variable for 
+
