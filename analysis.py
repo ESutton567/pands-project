@@ -38,17 +38,16 @@ with open('irisVariablesSummary.txt', 'a') as f:
     #writer.writerows('\n'.join(df))
     f.writelines('\n'.join(summary))
 
-
 # write to the new txt file
 #write("irisVariablesSummary.txt")
-
-
 
 # open iris dataset in read only mode
 #f = open("iris.data", "r")
 
-
 # task 2: The below code saves a histogram of each variable to png files
+
+df.plot.bar()
+plt.show()
 
 
 
