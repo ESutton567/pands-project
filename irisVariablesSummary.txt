@@ -1,6 +1,10 @@
 Summary of each variable
 Dataset = iris.data
-Sepal Length
-Sepal Width
-Petal Length
-Petal Width
+count
+mean
+std
+min
+25%
+50%
+75%
+max
