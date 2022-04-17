@@ -2,26 +2,49 @@
 # Author: Éilis Sutton
 
 import pandas as pd
+import re
+import csv
 
 path = '../pands-project/'
 filename = path + 'iris.data'
 
 df = pd.read_csv(filename)
 
-header_list=['Sepal Length','Sepal Width','Petal Length','Petal Width','Species']
-df = pd.read_csv(filename, names=header_list)
+# assign column names
+header=['Sepal Length','Sepal Width','Petal Length','Petal Width','Species']
+df = pd.read_csv(filename, names=header)
 
-print(df.head(5))
+# print out a stats summary of the variables
+#print(df.describe())
+
+# add text header to new file
+lines = ['Summary of each variable', 'Dataset = iris.data']
+# create new txt file
+with open('irisVariablesSummary.txt', 'w') as f:
+    for line in lines: 
+        f.write(line)
+        f.write('\n')
+
+summary = df.describe()
+print(df.describe())
+
+with open('irisVariablesSummary.txt', 'a') as f:
+    #for i in range(len(df)): => code not working
+        f.writelines('\n'.join(summary))
 
 
+
+# write to the new txt file
+#write("irisVariablesSummary.txt")
 # The below code outputs a summary of each variable to a single text file
 
 # open iris dataset in read only mode
 #f = open("iris.data", "r")
-# create new txt file
-#f.open("irisVariablesSummary.txt", "x")
-# write to the new txt file
-#f.write("irisVariablesSummary.txt")
+
+
+
+
+
 
 #print(f.read())
 
