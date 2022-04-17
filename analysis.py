@@ -1,7 +1,8 @@
 # This program performs some basic data analysis on the Fisher's Iris data set
 # Author: Éilis Sutton
 
-#task 1
+# Task 1
+# The below code outputs a summary of each variable to a single text file
 import pandas as pd
 import re
 import csv
@@ -40,7 +41,8 @@ with open('irisVariablesSummary.txt', 'a') as f:
 
 # write to the new txt file
 #write("irisVariablesSummary.txt")
-# The below code outputs a summary of each variable to a single text file
+
+
 
 # open iris dataset in read only mode
 #f = open("iris.data", "r")
