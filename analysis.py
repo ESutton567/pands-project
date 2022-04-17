@@ -25,12 +25,19 @@ with open('irisVariablesSummary.txt', 'w') as f:
         f.write(line)
         f.write('\n')
 
-summary = df.describe()
-print(df.describe())
+def summary(stats):
+    return df.describe()
 
+#summary = df.describe()
+#print(df.describe())
+
+#meanValues = df.groupby('Sepal Length').mean()
+#print(meanValues)
+
+stats = summary(stats) #??
 with open('irisVariablesSummary.txt', 'a') as f:
-    #for i in range(len(df)): => code not working
-        f.writelines('\n'.join(summary))
+    #for i in range(len(df)): #=> code not working
+        f.write('\n'.join(summary(stats)))
 
 
 
