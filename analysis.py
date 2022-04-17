@@ -1,6 +1,7 @@
 # This program performs some basic data analysis on the Fisher's Iris data set
 # Author: Éilis Sutton
 
+#task 1
 import pandas as pd
 import re
 import csv
@@ -8,7 +9,7 @@ import csv
 path = '../pands-project/'
 filename = path + 'iris.data'
 
-df = pd.read_csv(filename)
+df = pd.read_csv(filename, index_col=0)
 
 # assign column names
 header=['Sepal Length','Sepal Width','Petal Length','Petal Width','Species']
@@ -25,20 +26,26 @@ with open('irisVariablesSummary.txt', 'w') as f:
         f.write(line)
         f.write('\n')
 
-def summary(stats):
-    return df.describe()
+#def summary(stats):
+#    return df.describe()
 
+# make pivot table to aggregate species values
+df = df.pivot_table(values='Sepal Length', index=['Species'],aggfunc='describe')
+print(df)
+
+text  = df
 #summary = df.describe()
-#print(df.describe())
+#print(summary)
 
 #meanValues = df.groupby('Sepal Length').mean()
 #print(meanValues)
 
-stats = summary(stats) #??
 with open('irisVariablesSummary.txt', 'a') as f:
-    #for i in range(len(df)): #=> code not working
-        f.write('\n'.join(summary(stats)))
-
+    #for lines in df: #=> code not working
+    #infile.readlines(df):
+    #writer = csv.writer(f)
+    #writer.writerows('\n'.join(df))
+    f.writelines('\n'.join(text))
 
 
 # write to the new txt file
