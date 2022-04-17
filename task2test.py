@@ -9,11 +9,9 @@ filename = path + 'iris.data'
 iris_data = pd.read_csv(filename)
 iris_data.columns = ['sepal_length','sepal_width','petal_length','petal_width','species']
 
-
-
-
-
-
-
-#plt.hist(df)
-#plt.show()
+# histogram
+iris_data.hist()
+# test the output using code below
+# plt.show()
+# save tfigsavefigo a png file
+plt.savefig("iris_data.png")
