@@ -9,13 +9,13 @@ import csv
 import matplotlib.pyplot as plt
 
 path = '../pands-project/'
-filename = path + 'iris.data'
+filename = path + 'iris_data.csv'
 
-df = pd.read_csv(filename, index_col=0)
+#read in file
+iris_data = pd.read_csv(filename)
 
 # assign column names
-header=['Sepal Length','Sepal Width','Petal Length','Petal Width','Species']
-df = pd.read_csv(filename, names=header)
+iris_data.columns = ['sepal_length','sepal_width','petal_length','petal_width','species']
 
 # print out a stats summary of the variables
 #print(df.describe())
