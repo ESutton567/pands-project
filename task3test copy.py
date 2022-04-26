@@ -12,8 +12,6 @@ filename = path + 'iris_data.csv'
 iris_data = pd.read_csv(filename)
 iris_data.columns = ['sepal_length','sepal_width','petal_length','petal_width','species']
 
-#versicolor = iris_data[iris_data.columns 'species' == 'Versicolor']
-
 # generating a scatter plot matrix to look at the interaction between the variables
 fig,ax = plt.subplots(6, figsize=(20,20))
     
