@@ -1,0 +1,41 @@
+References
+
+# write to the new txt file
+https://www.w3schools.com/python/python_file_write.asp
+
+# assign column names
+https://www.adamsmith.haus/python/answers/how-to-set-column-names-when-importing-a-csv-into-a-pandas-dataframe-in-python
+
+# print stats summary
+https://stackoverflow.com/questions/33889310/r-summary-equivalent-in-numpy
+using df
+https://www.geeksforgeeks.org/python-pandas-dataframe-describe-method/
+
+Task 2
+
+matplotlib histogram
+https://matplotlib.org/3.5.0/api/_as_gen/matplotlib.pyplot.hist.html
+https://rpubs.com/Sora/developing-data-product
+https://rajritvikblog.wordpress.com/2017/06/29/iris-dataset-analysis-python/
+customise
+https://datagy.io/histogram-python/
+
+Assigning different titles for each plot!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+https://stackoverflow.com/questions/66267260/giving-x-and-y-labels-titles-and-legends-to-individual-histograms-in-python
+
+Scatter plots
+https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/
+https://www.futurelearn.com/info/courses/data-visualisation-with-python-matplotlib-and-visual-analysis/0/steps/192897
+
+Task 3: 
+Scatter plot
+https://matplotlib.org/3.5.0/api/_as_gen/matplotlib.pyplot.scatter.html
+
+figsize
+https://stackabuse.com/matplotlib-scatterplot-tutorial-and-examples/
+plot colour
+https://matplotlib.org/stable/gallery/color/named_colors.html
+font properties
+https://matplotlib.org/stable/api/font_manager_api.html#matplotlib.font_manager.FontProperties
+Figure title
+https://matplotlib.org/3.1.1/gallery/subplots_axes_and_figures/figure_title.html

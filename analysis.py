@@ -28,7 +28,7 @@ with open('irisVariablesSummary.txt', 'w') as f:
         f.write(line)
         f.write('\n')
 
-summary = df.describe()
+summary = iris_data.describe()
 print(summary)
 
 with open('irisVariablesSummary.txt', 'a') as f:
@@ -46,7 +46,7 @@ with open('irisVariablesSummary.txt', 'a') as f:
 
 # task 2: The below code saves a histogram of each variable to png files
 
-df.plot.bar()
+iris_data.plot.bar()
 plt.show()
 
 
