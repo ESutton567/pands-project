@@ -1,60 +1,15 @@
-# This program performs some basic data analysis on the Fisher's Iris data set
-# Author: Éilis Sutton
-
-# Task 1
-# The below code outputs a summary of each variable to a single text file
+from matplotlib.ft2font import BOLD
 import pandas as pd
-import re
-import csv
 import matplotlib.pyplot as plt
+import numpy as py
 
 path = '../pands-project/'
-filename = path + 'iris.data'
+filename = path + 'iris_data.csv'
 
-df = pd.read_csv(filename, index_col=0)
+iris_data = pd.read_csv(filename)
+iris_data.columns = ['sepal_length','sepal_width','petal_length','petal_wid
 
-# assign column names
-header=['Sepal Length','Sepal Width','Petal Length','Petal Width','Species']
-df = pd.read_csv(filename, names=header)
-
-# print out a stats summary of the variables
-#print(df.describe())
-
-# add text header to new file
-lines = ['Summary of each variable', 'Dataset = iris.data']
-# create new txt file
-with open('irisVariablesSummary.txt', 'w') as f:
-    for line in lines: 
-        f.write(line)
-        f.write('\n')
-
-summary = df.describe()
-print(summary)
-
-with open('irisVariablesSummary.txt', 'a') as f:
-    #for lines in df: #=> code not working
-    #infile.readlines(df):
-    #writer = csv.writer(f)
-    #writer.writerows('\n'.join(df))
-    f.writelines('\n'.join(summary))
-
-# write to the new txt file
-#write("irisVariablesSummary.txt")
-
-# open iris dataset in read only mode
-#f = open("iris.data", "r")
-
-# task 2: The below code saves a histogram of each variable to png files
-
-df.plot.bar()
-plt.show()
-
-
-
-
-
-# The below code outputs a scatter plot of each pair of variables
-
+# generating a scatter plot matrix to look at the interaction between the v
 fig,ax = plt.subplots(6, figsize=(20,20))
     
 ax[0].scatter(x = iris_data['sepal_length'], y = iris_data['sepal_width'], 
@@ -93,6 +48,3 @@ plt.show()
 
 # the code below was used to visualise the scatterplots while customising
 #plt.savefig("scatterplot.png")
-
-
-
