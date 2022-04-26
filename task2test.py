@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as py
 
 path = '../pands-project/'
-filename = path + 'iris.data'
+filename = path + 'iris_data'
 
 iris_data = pd.read_csv(filename)
 iris_data.columns = ['sepal_length','sepal_width','petal_length','petal_width','species']
