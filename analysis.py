@@ -17,32 +17,12 @@ iris_data = pd.read_csv(filename)
 # assign column names
 iris_data.columns = ['sepal_length','sepal_width','petal_length','petal_width','species']
 
-# print out a stats summary of the variables
-#print(df.describe())
-
-# add text header to new file
-lines = ['Summary of each variable', 'Dataset = iris.data']
-# create new txt file
-with open('irisVariablesSummary.txt', 'w') as f:
-    for line in lines: 
-        f.write(line)
-        f.write('\n')
-
+# Create a text file to ouptut a summary of the variables
+# Update this to make it more readable
 summary = iris_data.describe()
-print(summary)
-
-with open('irisVariablesSummary.txt', 'a') as f:
-    #for lines in df: #=> code not working
-    #infile.readlines(df):
-    #writer = csv.writer(f)
-    #writer.writerows('\n'.join(df))
-    f.writelines('\n'.join(summary))
-
-# write to the new txt file
-#write("irisVariablesSummary.txt")
-
-# open iris dataset in read only mode
-#f = open("iris.data", "r")
+print('Summary of each variable\nDataset = iris.data.csv', file=open('irisVariablesSummary.txt', 'w'))
+# append a stats summary of the variables
+print(summary, file=open('irisVariablesSummary.txt', 'a'))
 
 # task 2: The below code saves a histogram of each variable to png files
 
