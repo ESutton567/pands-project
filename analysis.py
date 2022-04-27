@@ -2,7 +2,7 @@
 # Author: Éilis Sutton
 
 # Task 1
-# The below code outputs a summary of each variable to a single text file
+# The below code outputs a summary of each variable to a single t
 import pandas as pd
 import re
 import csv
@@ -15,14 +15,696 @@ filename = path + 'iris_data.csv'
 iris_data = pd.read_csv(filename)
 
 # assign column names
-iris_data.columns = ['sepal_length','sepal_width','petal_length','petal_width','species']
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
 
 # Create a text file to ouptut a summary of the variables
-# Update this to make it more readable
-summary = iris_data.describe()
-print('Summary of each variable\nDataset = iris.data.csv', file=open('irisVariablesSummary.txt', 'w'))
+print('Summary statistics for each variable (cm) in the Iris Data
 # append a stats summary of the variables
-print(summary, file=open('irisVariablesSummary.txt', 'a'))
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))ingle text file
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))ength','petal_width','species']
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a')) file=open('irisVariablesSummary.txt', 'w'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+# Task 1
+# The below code outputs a summary of each variable to a single t
+import pandas as pd
+import re
+import csv
+import matplotlib.pyplot as plt
+
+path = '../pands-project/'
+filename = path + 'iris_data.csv'
+
+#read in file
+iris_data = pd.read_csv(filename)
+
+# assign column names
+#?Removed species column here - check if it works for the plot ou
+iris_data.columns = ['sepal_length','sepal_width','petal_length',
+
+# Check if any values are missing
+iris_data.isnull().sum()
+
+# Create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Data
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA list of the type for each variable in the Iris Dataset
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('i
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
 
 # task 2: The below code saves a histogram of each variable to png files
 
