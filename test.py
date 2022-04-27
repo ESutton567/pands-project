@@ -5,12 +5,15 @@ import matplotlib.pyplot as plt
 
 path = '../pands-project/'
 filename = path + 'iris_data.csv'
+# assign column names
+columns = ['sepal_length','sepal_width','petal_length','petal_width', 'species']
 
 #read in file
-iris_data = pd.read_csv(filename)
+iris_data = pd.read_csv(filename, sep= ',', header=None, names=columns)
 
-# assign column names
-#?Removed species column here - check if it works for the plot outputs
-iris_data.columns = ['sepal_length','sepal_width','petal_length','petal_width', 'species']
+# locate the target data within the file
+setosa = iris_data.loc[iris_data['species']=='Iris-setosa']
+virginica = iris_data.loc[iris_data['species']=='Iris-virginica']
+versicolor = iris_data.loc[iris_data['species']=='Iris-versicolor']
 
-print(iris_data.head())
+print(iris_data)
