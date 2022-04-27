@@ -72,15 +72,6 @@ ax[3].scatter(x = iris_data['sepal_length'], y = iris_data['sepal_width'], color
 ax[3].set_xlabel("Sepal Length", weight='bold')
 ax[3].set_ylabel("Sepal Width", weight='bold')
 
-ax[4].scatter(x = iris_data['petal_width'], y = iris_data['species'], color = 'slateblue', edgecolors = "black")
-ax[4].set_xlabel("Petal Width", weight='bold')
-ax[4].set_ylabel("Species", weight='bold')
-
-ax[5].scatter(x = iris_data['species'], y = iris_data['sepal_length'], color = 'orchid', edgecolors = "black")
-ax[5].set_xlabel("Species", weight='bold')
-ax[5].set_ylabel("Sepal Length", weight='bold')
-
-
 plt.grid()
 plt.show()
 
