@@ -5,3 +5,33 @@ Research the data set online and provide a summary
   * Saves a histogram of each variable to png files
   * Outputs a scatter plot of each pair of variables
   * Performs any other analysis appropriate analysis
+
+
+References:
+
+
+
+
+iris_data.plot(kind ="scatter", 
+                x ='sepal_length',
+                y = 'sepal_width')        
+
+iris_data.plot(kind ="scatter", 
+                x ='sepal_width',
+                y = 'petal_length')
+
+iris_data.plot(kind ="scatter", 
+                x ='petal_length',
+                y = 'petal_width')
+
+iris_data.plot(kind ="scatter", 
+                x ='petal_width',
+                y = 'species')
+
+iris_data.plot(kind ="scatter", 
+                x ='species',
+                y = 'sepal_length')
+
+
+figsize=(10,6)
+

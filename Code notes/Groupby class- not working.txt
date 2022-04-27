@@ -1,0 +1,7 @@
+print('\nSummary statistics for each class of iris plant in the Iris Dataset:\n', file=open('irisVariablesSummary.txt', 'a'))
+# first use groupby to sort the dataframe by class of iris species
+iris_grouped = iris_data.groupby(iris_class)
+iris_data.groupby(iris_class).count()
+# append a stats summary of each class
+summary_species = iris_data.groupby(iris_class).describe()
+print(summary_species, file=open('irisVariablesSummary.txt', 'a'))

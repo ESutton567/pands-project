@@ -11,6 +11,12 @@ https://stackoverflow.com/questions/33889310/r-summary-equivalent-in-numpy
 using df
 https://www.geeksforgeeks.org/python-pandas-dataframe-describe-method/
 
+try this:
+print(iris['Type'].value_counts(), file=open("irisSummary.txt", "a"))
+    print(' ')
+    print(iris.describe, file=open("irisSummary.txt", "a"))
+    print (' ') 
+
 Task 2
 
 matplotlib histogram
