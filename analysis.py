@@ -10,12 +10,16 @@ import matplotlib.pyplot as plt
 
 path = '../pands-project/'
 filename = path + 'iris_data.csv'
-
-# read in file
-iris_data = pd.read_csv(filename)
-
 # assign column names
-iris_data.columns = ['sepal_length','sepal_width','petal_length','petal_width', 'species']
+columns = ['sepal_length','sepal_width','petal_length','petal_width', 'species']
+
+#read in file
+iris_data = pd.read_csv(filename, sep= ',', header=None, names=columns)
+
+# locate the target data within the dataset
+setosa = iris_data.loc[iris_data['species']=='Iris-setosa']
+virginica = iris_data.loc[iris_data['species']=='Iris-virginica']
+versicolor = iris_data.loc[iris_data['species']=='Iris-versicolor']
 
 # check if any values are missing
 iris_data.isnull().sum()

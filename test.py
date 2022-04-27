@@ -11,7 +11,7 @@ columns = ['sepal_length','sepal_width','petal_length','petal_width', 'species']
 #read in file
 iris_data = pd.read_csv(filename, sep= ',', header=None, names=columns)
 
-# locate the target data within the file
+# locate the target data within the dataset
 setosa = iris_data.loc[iris_data['species']=='Iris-setosa']
 virginica = iris_data.loc[iris_data['species']=='Iris-virginica']
 versicolor = iris_data.loc[iris_data['species']=='Iris-versicolor']
