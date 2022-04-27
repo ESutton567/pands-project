@@ -11,16 +11,16 @@ import matplotlib.pyplot as plt
 path = '../pands-project/'
 filename = path + 'iris_data.csv'
 
-#read in file
+# read in file
 iris_data = pd.read_csv(filename)
 
 # assign column names
 iris_data.columns = ['sepal_length','sepal_width','petal_length','petal_width', 'species']
 
-# Check if any values are missing
+# check if any values are missing
 iris_data.isnull().sum()
 
-# Create a text file to ouptut a summary of the variables
+# create a text file to ouptut a summary of the variables
 print('Summary statistics for each variable (cm) in the Iris Dataset:\n', file=open('irisVariablesSummary.txt', 'w'))
 # append a stats summary of the variables
 summary_all = iris_data.describe()
@@ -33,16 +33,20 @@ print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'))
 print('\nA concise summary of the Iris Dataset: \n', file=open('irisVariablesSummary.txt', 'a'))
 print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
 
-# task 2: The below code saves a histogram of each variable to png files
+# Task 2: The below code saves a histogram of each variable to png files
 
-iris_data.plot.bar()
-plt.show()
+# create histograms
+iris_data.hist(color='indigo', edgecolor='black', grid=False)
+plt.text(-3.5, 105,'Iris dataset: Histograms of each variable', 
+                fontname='Times New Roman',
+                fontsize=20, 
+                fontweight='bold'
+                )
 
+# save fig to a png file
+plt.savefig("iris_data.png")
 
-
-
-
-# The below code outputs a scatter plot of each pair of variables
+# Task 3a: The below code outputs a scatter plot of each pair of variables
 
 fig,ax = plt.subplots(6, figsize=(20,20))
     

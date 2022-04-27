@@ -1,4 +1,4 @@
-# task 2: The below code saves a histogram of each variable to png files
+# Task 2: The below code saves a histogram of each variable to png files
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as py
