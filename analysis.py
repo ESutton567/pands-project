@@ -48,31 +48,32 @@ plt.savefig("iris_data.png")
 
 # Task 3a: The below code outputs a scatter plot of each pair of variables
 
-fig,ax = plt.subplots(6, figsize=(20,20))
+fig,ax = plt.subplots(3, figsize=(10,10))
     
 ax[0].scatter(x = iris_data['sepal_length'], y = iris_data['sepal_width'], color = 'blue', edgecolors = "black")
 ax[0].set_xlabel("Sepal Length", weight='bold')
 ax[0].set_ylabel("Sepal Width", weight='bold')
 ax[0].set_title('Iris dataset: Scatter plots of each pair of variables', 
                 fontname='Times New Roman',
-                fontsize=35, 
+                fontsize=20, 
                 fontweight='bold'
                 )
 
 
-ax[1].scatter(x = iris_data['sepal_width'], y = iris_data['petal_length'], color = 'blueviolet', edgecolors = "black")
-ax[1].set_xlabel("Sepal Width", weight='bold')
-ax[1].set_ylabel("Petal Length", weight='bold')
+ax[0].scatter(x = iris_data['sepal_width'], y = iris_data['petal_length'], color = 'blueviolet', edgecolors = "black")
+ax[0].set_xlabel("Sepal Width", weight='bold')
+ax[0].set_ylabel("Petal Length", weight='bold')
 
-ax[2].scatter(x = iris_data['petal_length'], y = iris_data['petal_width'], color = 'darkgreen', edgecolors = "black")
-ax[2].set_xlabel("Petal Length", weight='bold')
-ax[2].set_ylabel("Petal Width", weight='bold')
+ax[1].scatter(x = iris_data['petal_length'], y = iris_data['petal_width'], color = 'darkgreen', edgecolors = "black")
+ax[1].set_xlabel("Petal Length", weight='bold')
+ax[1].set_ylabel("Petal Width", weight='bold')
 
-ax[3].scatter(x = iris_data['sepal_length'], y = iris_data['sepal_width'], color = 'teal', edgecolors = "black")
-ax[3].set_xlabel("Sepal Length", weight='bold')
-ax[3].set_ylabel("Sepal Width", weight='bold')
+ax[2].scatter(x = iris_data['sepal_length'], y = iris_data['sepal_width'], color = 'teal', edgecolors = "black")
+ax[2].set_xlabel("Sepal Length", weight='bold')
+ax[2].set_ylabel("Sepal Width", weight='bold')
 
-plt.grid()
+#plt.grid()
+plt.tight_layout()
 plt.show()
 
 # the code below was used to visualise the scatterplots while customising
