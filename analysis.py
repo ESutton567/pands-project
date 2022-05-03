@@ -7,6 +7,7 @@ import pandas as pd
 import re
 import csv
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 path = '../pands-project/'
 filename = path + 'iris_data.csv'
@@ -50,7 +51,7 @@ plt.text(-3.5, 105,'Iris dataset: Histograms of each variable',
 # save fig to a png file
 plt.savefig("iris_data.png")
 
-# Task 3a: The below code outputs a scatter plot of each pair of variables
+# Task 3: The below code outputs a scatter plot of each pair of variables
 
 fig,ax = plt.subplots(3, figsize=(10,10))
     
@@ -83,7 +84,13 @@ plt.show()
 # the code below was used to visualise the scatterplots while customising
 #plt.savefig("scatterplot.png")
 
+# Additional plot 1: This program runs a heatmap of the iris dataset using Seaborn
 
+# run a heatmap of the dataset showing correlations between all numerical values
+# customise line colour and width and annotate each cell with the numeric value
+sns.heatmap(iris_data.corr(), linecolor = 'white', linewidths = 1, annot = True)
+
+plt.savefig("iris_data_Heatmap.png")
 
 
 
