@@ -61,7 +61,8 @@ ax[0].set_ylabel("Sepal Width", weight='bold')
 ax[0].set_title('Iris dataset: Scatter plots of each pair of variables', 
                 fontname='Times New Roman',
                 fontsize=20, 
-                fontweight='bold'
+                fontweight='bold', 
+                hue='species'
                 )
 
 
