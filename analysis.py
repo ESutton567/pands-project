@@ -49,7 +49,7 @@ plt.text(-3.5, 105,'Iris dataset: Histograms of each variable',
                 )
 
 # save fig to a png file
-plt.savefig("iris_data.png")
+plt.savefig("iris_data_Histogram.png")
 
 # Task 3: The below code outputs a scatter plot of each pair of variables
 
@@ -79,17 +79,15 @@ ax[2].set_ylabel("Sepal Width", weight='bold')
 
 #plt.grid()
 plt.tight_layout()
-plt.show()
-
-# the code below was used to visualise the scatterplots while customising
-#plt.savefig("scatterplot.png")
+plt.savefig("iris_data_Scatterplot.png")
+# need to close the above figure to prevent plots overlapping in the same file
+plt.clf()
 
 # Additional plot 1: This program runs a heatmap of the iris dataset using Seaborn
 
 # run a heatmap of the dataset showing correlations between all numerical values
 # customise line colour and width and annotate each cell with the numeric value
 sns.heatmap(iris_data.corr(), linecolor = 'white', linewidths = 1, annot = True)
-
 plt.savefig("iris_data_Heatmap.png")
 
 
