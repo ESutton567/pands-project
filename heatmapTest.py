@@ -14,7 +14,6 @@ filename = path + 'iris_data.csv'
 # assign column names
 columns = ['sepal_length','sepal_width','petal_length','petal_width', 'species']
 
-#read in file -> need to reread in the file to use seaborn
 iris_data = pd.read_csv(filename, sep= ',', header=None, names=columns)
 
 sns.heatmap(iris_data.corr(), linecolor = 'white', linewidths = 1, annot = True)
