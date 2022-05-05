@@ -108,6 +108,8 @@ print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
 * This program will return the following text in a text file: 
 #1 ![Stats summary](Txt_output.png) 
 
+<img src="Iris_Heatmap.png" width="300">
+
 
 
 
