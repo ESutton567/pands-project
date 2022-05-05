@@ -60,7 +60,6 @@ import seaborn as sns
 ~~~
 
 4. Download the Iris data set [here](https://archive.ics.uci.edu/ml/datasets/iris) to the same folder you will save your analsyis program, read it into the program, and assign the column names:
-
 ~~~
 path = '../pands-project/'
 filename = path + 'iris_data.csv'
@@ -69,7 +68,6 @@ columns = ['sepal_length','sepal_width','petal_length','petal_width', 'species']
 ~~~
 
 5. Read in the file and locate the target variable within the dataset, i.e. in this case we want to compare between Species of Iris plants (Setosa, Virginia and Versicolor)
-
 ~~~
 #read in file
 iris_data = pd.read_csv(filename, sep= ',', header=None, names=columns)
@@ -107,7 +105,45 @@ print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
 
 # Task 2: Save a histogram of each variable to png files
 
-* 
+* This program outputs a histogram of each variable and saves it ot a png file within the same folder.
+* First we instruct the program to output hitograms, customising the colour and remove the grid
+~~~
+iris_data.hist(color='indigo', edgecolor='black', grid=False)
+~~~
+
+* Then we add a custom title to the plot/figure
+~~~
+plt.text(-3.5, 105,'Iris dataset: Histograms of each variable', 
+                fontname='Times New Roman',
+                fontsize=20, 
+                fontweight='bold'
+                )
+~~~
+
+* Finally we output the plot to a png file
+~~~
+plt.savefig("iris_data_Histogram.png")
+~~~
+
+
+<img src="iris_data_Heatmap.png" width="300">
+
+
+
+
+
+# Task 3: Output a scatter plot of each pair of variables (to a png file)
+
+
+
+~
+
+* First we customise the figure to contain 4 subplots (1 for each variable) and define the size
+~~~
+fig,ax = plt.subplots(4, figsize=(10,10))
+~~~
+
+* Next we instruct the program to output the first plot
 
 
 
