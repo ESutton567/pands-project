@@ -53,7 +53,7 @@ plt.savefig("iris_data_Histogram.png")
 
 # Task 3: The below code outputs a scatter plot of each pair of variables
 
-fig,ax = plt.subplots(3, figsize=(10,10))
+fig,ax = plt.subplots(4, figsize=(10,10))
     
 ax[0].scatter(x = iris_data['sepal_length'], y = iris_data['sepal_width'], color = 'blue', edgecolors = "black")
 ax[0].set_xlabel("Sepal Length", weight='bold')
@@ -62,7 +62,6 @@ ax[0].set_title('Iris dataset: Scatter plots of each pair of variables',
                 fontname='Times New Roman',
                 fontsize=20, 
                 fontweight='bold', 
-                hue='species'
                 )
 
 
