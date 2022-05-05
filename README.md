@@ -68,13 +68,45 @@ filename = path + 'iris_data.csv'
 columns = ['sepal_length','sepal_width','petal_length','petal_width', 'species']
 ~~~
 
+5. Read in the file and locate the target variable within the dataset, i.e. in this case we want to compare between Species of Iris plants (Setosa, Virginia and Versicolor)
+
+~~~
+#read in file
+iris_data = pd.read_csv(filename, sep= ',', header=None, names=columns)
+
+# locate the target data within the dataset
+setosa = iris_data.loc[iris_data['species']=='Iris-setosa']
+virginica = iris_data.loc[iris_data['species']=='Iris-virginica']
+versicolor = iris_data.loc[iris_data['species']=='Iris-versicolor']
+~~~
+
+6. Proceed with the code for the analyses 
 
 ### Task 1: Output a summary of each variable to a single text file
 
-* Using 
+* Using the ```open``` command a text file is created and opened. The initial header is written to the file ('w') and subsequent outputs are appended ('a'). 
+ * The ```describe``` command outputs a statistics summary for each variable (sepal length, sepal width, petal length and petal width) in the data set
+ * The ```dtype``` command outputs the type of of the object, i.e. float, object, etc.
+ * the ```info``` command output a concise summary of the data set
 
 
+~~~
+# create a text file to ouptut a summary of the variables
+print('Summary statistics for each variable (cm) in the Iris Dataset:\n', file=open('irisVariablesSummary.txt', 'w'))
+# append a stats summary of the variables
+summary_all = iris_data.describe()
+print(summary_all, file=open('irisVariablesSummary.txt', 'a'))
 
+print('\nA list of the type for each variable in the Iris Dataset:\n', file=open('irisVariablesSummary.txt', 'a'))
+# append a type summary of the variables
+print(iris_data.dtypes, file=open('irisVariablesSummary.txt', 'a'))
+
+print('\nA concise summary of the Iris Dataset: \n', file=open('irisVariablesSummary.txt', 'a'))
+print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
+~~~
+
+* This program will return the following text in a text file: 
+![Stats summary](Txt_output.jpg)
 
 
 
