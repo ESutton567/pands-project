@@ -16,7 +16,7 @@ columns = ['sepal_length','sepal_width','petal_length','petal_width', 'species']
 
 iris_data = pd.read_csv(filename, sep= ',', header=None, names=columns)
 
-# change the style -> look more into this
+# change the style 
 sns.set(style='ticks', color_codes=True)
 g = sns.pairplot(iris_data, hue='species')
 

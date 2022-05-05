@@ -90,8 +90,13 @@ plt.clf()
 sns.heatmap(iris_data.corr(), linecolor = 'white', linewidths = 1, annot = True)
 plt.savefig("iris_data_Heatmap.png")
 
+# Additional plot 2: This program runs a pairplot of the iris dataset using Seaborn
 
+# change the style 
+sns.set(style='ticks', color_codes=True)
+g = sns.pairplot(iris_data, hue='species')
 
+plt.savefig("iris_data_Pairplot.png")
 
 
 
