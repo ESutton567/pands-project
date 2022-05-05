@@ -103,10 +103,10 @@ print('\nA concise summary of the Iris Dataset: \n', file=open('irisVariablesSum
 print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
 ~~~
 
-# Task 2: Save a histogram of each variable to png files
+### Task 2: Save a histogram of each variable to png files
 
-* This program outputs a histogram of each variable and saves it ot a png file within the same folder.
-* First we instruct the program to output hitograms, customising the colour and remove the grid
+* This program outputs a histogram of each variable and saves it ot a png file within the same folder
+* First we instruct the program to output hitograms, customising the colour and removing the gridlines
 ~~~
 iris_data.hist(color='indigo', edgecolor='black', grid=False)
 ~~~
@@ -125,25 +125,83 @@ plt.text(-3.5, 105,'Iris dataset: Histograms of each variable',
 plt.savefig("iris_data_Histogram.png")
 ~~~
 
+* The resulting image will be saved: 
 
-<img src="iris_data_Heatmap.png" width="300">
-
-
-
-
-
-# Task 3: Output a scatter plot of each pair of variables (to a png file)
+<img src="iris_data_Histogram.png" width="600">
+We can see that sepal length and width follow a normal distribution whereas petal length and width do not
 
 
+### Task 3: Output a scatter plot of each pair of variables (to a png file)
 
-~
-
+* This program outputs a scatter plot of each pair of variables (and saves it ot a png file within the same folder)
 * First we customise the figure to contain 4 subplots (1 for each variable) and define the size
 ~~~
 fig,ax = plt.subplots(4, figsize=(10,10))
 ~~~
 
-* Next we instruct the program to output the first plot
+* Next we instruct the program to output the first plot: customised for colors and with axis labels set. 
+* We also add the figure title at this point
+
+~~~
+ax[0].scatter(x = iris_data['sepal_length'], y = iris_data['sepal_width'], color = 'blue', edgecolors = "black")
+ax[0].set_xlabel("Sepal Length", weight='bold')
+ax[0].set_ylabel("Sepal Width", weight='bold')
+ax[0].set_title('Iris dataset: Scatter plots of each pair of variables', 
+                fontname='Times New Roman',
+                fontsize=20, 
+                fontweight='bold', 
+                )
+
+~~~
+
+* Next we ouput the remaining scatterplots within the same figure
+
+~~~ 
+ax[1].scatter(x = iris_data['sepal_width'], y = iris_data['petal_length'], color = 'blueviolet', edgecolors = "black")
+ax[1].set_xlabel("Sepal Width", weight='bold')
+ax[1].set_ylabel("Petal Length", weight='bold')
+
+ax[2].scatter(x = iris_data['petal_length'], y = iris_data['petal_width'], color = 'darkgreen', edgecolors = "black")
+ax[2].set_xlabel("Petal Length", weight='bold')
+ax[2].set_ylabel("Petal Width", weight='bold')
+
+ax[3].scatter(x = iris_data['sepal_length'], y = iris_data['sepal_width'], color = 'teal', edgecolors = "black")
+ax[3].set_xlabel("Sepal Length", weight='bold')
+ax[3].set_ylabel("Sepal Width", weight='bold')
+~~~
+
+* Apply a tight layout to automatically adjust the subplots to fit in the fugure area
+~~~
+plt.tight_layout()
+~~~
+
+* Save the figure to a png file, and close it to prevent future figures/plots being saved to the same file
+~~~
+plt.savefig("iris_data_Scatterplot.png")
+# need to close the above figure to prevent plots overlapping in the same file
+plt.clf()
+~~~
+
+* The resulting image will be saved: 
+
+<img src="iris_data_Scatterplot.png" width="600">
+
+
+
+### Additional plot 1: Heatmap
+
+* This program runs a heatmap of the iris dataset using the Seaborn software. 
+* It shows correlations between all the numerical values of the variables
+* The output, like most plots, can be customised, and in this case each cell is also annotated with the numeric value
+
+~~~
+sns.heatmap(iris_data.corr(), linecolor = 'white', linewidths = 1, annot = True)
+plt.savefig("iris_data_Heatmap.png")
+~~~
+
+* The resulting image will be saved: 
+
+<img src="iris_data_Heatmap.png" width="600">
 
 
 
