@@ -105,11 +105,9 @@ print('\nA concise summary of the Iris Dataset: \n', file=open('irisVariablesSum
 print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
 ~~~
 
-* This program will return the following text in a text file: 
-![Stats summary]("Txt_output.png") 
+# Task 2: Save a histogram of each variable to png files
 
-<img src="Txt_output.png" width="300">
-
+* 
 
 
 
