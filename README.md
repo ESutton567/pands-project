@@ -190,7 +190,7 @@ plt.clf()
 
 ### Additional plot 1: Heatmap
 
-* This program runs a heatmap of the iris dataset using the Seaborn software. 
+* This program runs a heatmap of the iris data set using the Seaborn software 
 * It shows correlations between all the numerical values of the variables
 * The output, like most plots, can be customised, and in this case each cell is also annotated with the numeric value
 
@@ -204,7 +204,22 @@ plt.savefig("iris_data_Heatmap.png")
 <img src="iris_data_Heatmap.png" width="600">
 
 
+### Additional plot 2: Pairplot
 
+* This program runs a pairs plot of the iris data set using the Seaborn software
+* They are usually run to identify trends in the data that might require a follow-up analysis
+
+~~~
+sns.set(style='ticks', color_codes=True)
+g = sns.pairplot(iris_data, hue='species')
+
+plt.savefig("iris_data_Pairplot.png")
+~~~
+
+* The resulting image will be saved: 
+
+<img src="iris_data_Pairplot.png" width="600">
+It's quite clear from these plots that the variables we are looking at in this analysis are much different in the Setosa species than the Versicolour and Virginica species, who tend to group together
 
 
 
