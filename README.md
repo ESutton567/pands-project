@@ -106,7 +106,8 @@ print(iris_data.info, file=open('irisVariablesSummary.txt', 'a'))
 ~~~
 
 * This program will return the following text in a text file: 
-![Stats summary](Txt_output.png) 
+#1 ![Stats summary](Txt_output.png) 
+
 
 
 
