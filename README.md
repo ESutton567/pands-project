@@ -1,15 +1,16 @@
 # pands-project
 
 ## Table of Contents
-* [Background](https://github.com/ESutton567/pands-problem-sheet#pands-problem-sheet)
-  * [1. Creating a repository](https://github.com/ESutton567/pands-problem-sheet#1-creating-a-repository)
-  * [2. Statements](https://github.com/ESutton567/pands-problem-sheet#2-statements)
-  * [3. Variables](https://github.com/ESutton567/pands-problem-sheet#3-variables)
-  * [4. Controlling the flow](https://github.com/ESutton567/pands-problem-sheet#4-controlling-the-flow)
-  * [5. Data](https://github.com/ESutton567/pands-problem-sheet#5-data)
-  * [6. Functions](https://github.com/ESutton567/pands-problem-sheet#6-functions)
-  * [7. Files](https://github.com/ESutton567/pands-problem-sheet#7-files)
-  * [8. Plotting](https://github.com/ESutton567/pands-problem-sheet#7-plotting)
+* [Background](https://github.com/ESutton567/pands-project/blob/main/README.md#background)
+* [Fisher's Iris data set](https://github.com/ESutton567/pands-project/blob/main/README.md#fishers-iris-data-set)
+* [Set-up](https://github.com/ESutton567/pands-project/blob/main/README.md#set-up)
+* [Task 1: Output a summary of each variable to a single text file](https://github.com/ESutton567/pands-project/blob/main/README.md#task-1-output-a-summary-of-each-variable-to-a-single-text-file)
+* [Task 2: Save a histogram of each variable to png files](https://github.com/ESutton567/pands-project/blob/main/README.md#task-3-output-a-scatter-plot-of-each-pair-of-variables-to-a-png-file)
+* [Task 3: Output a scatter plot of each pair of variables (to a png file)](https://github.com/ESutton567/pands-problem-sheet#5-data)
+* [Additional plot 1: Heatmap](https://github.com/ESutton567/pands-project/blob/main/README.md#additional-plot-1-heatmap)
+* [Additional plot 2: Pairplots](https://github.com/ESutton567/pands-project/blob/main/README.md#additional-plot-2-pairplots)
+* [Additional plot 3: Boxplots](https://github.com/ESutton567/pands-project/blob/main/README.md#additional-plot-3-boxplots)
+* [Summary](https://github.com/ESutton567/pands-project/blob/main/README.md#summary)
 
 ## Background
 
