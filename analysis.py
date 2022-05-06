@@ -95,8 +95,21 @@ plt.savefig("iris_data_Heatmap.png")
 # change the style 
 sns.set(style='ticks', color_codes=True)
 g = sns.pairplot(iris_data, hue='species')
-
 plt.savefig("iris_data_Pairplot.png")
+
+# Additional plot 3: This program outputs a boxplot of the iris dataset using Seaborn
+
+sns.set(style="whitegrid", palette="Paired")
+f, axes = plt.subplots(2, 2, figsize=(16, 16)) 
+
+sns.boxplot(x='species', y='petal_length',hue = 'species',data=iris_data, ax=axes[0,0])
+sns.boxplot(x='species', y='sepal_length', data=iris_data, ax=axes[0,1])
+sns.boxplot(x='species', y='petal_width',data=iris_data, ax=axes[1,0])
+sns.boxplot(x='species', y='sepal_width', data=iris_data, ax=axes[1,1])
+
+plt.suptitle('Iris dataset: Boxplots')
+plt.savefig("iris_data_Boxplot.png")
+
 
 
 
