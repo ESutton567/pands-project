@@ -25,14 +25,14 @@ The information in this ReadMe file covers the work necessary to meet the indivi
   * Task 1: Outputs a summary of each variable to a single text file
   * Task 2: Saves a histogram of each variable to png files
   * Task 3: Outputs a scatter plot of each pair of variables
-  * Additional tasks: Performs any other appropriate analysis
+  * Additional tasks: Perform any other appropriate analysis
 
 
 ## Fisher's Iris data set
 
-This data set is a well-known benchmark mulivariate data set used for testing out and validating programs <sup>1,2</sup>. It was developed by Ronald Fisher, a statistician and biologist<sup>3</sup>, whose stauch support of eugenics will forever overshadow any contributions he made to his field<sup>4,5</sup>. Fisher developed the data set in 1936 as an example of a linear discriminant analysis<sup>6</sup>.
+This data set is a well-known benchmark multivariate data set used for testing out and validating programs <sup>1,2</sup>. It was developed by Ronald Fisher, a statistician and biologist<sup>3</sup>, whose staunch support of eugenics will forever overshadow any contributions he made to his field<sup>4,5</sup>. Fisher developed the data set in 1936 as an example of a linear discriminant analysis<sup>6</sup>.
 
-Nowadays the data set is commonly used as a test case in machine learning techniques<sup>7</sup>. The data set itself contains 50 instances each of 3 classes (types) of iris plant<sup>8</sup> for a total of 150 instances, and can be found [here](https://archive.ics.uci.edu/ml/datasets/iris). 
+Nowadays the data set is commonly used as a test case in machine learning techniques<sup>7</sup>. The data set itself contains 50 instances each of 3 classes (types) of iris plant<sup>8</sup> for a total of 150 instances and can be found [here](https://archive.ics.uci.edu/ml/datasets/iris). 
 
 The information in the data set is laid out as follows:
 
@@ -42,13 +42,13 @@ The information in the data set is laid out as follows:
 | 50 data points | 50 data points | 50 data points| 50 data points| versicolor|
 | 50 data points | 50 data points | 50 data points| 50 data points| virginica |
 
-To begin the analysis of this data set we will look at some descriptive summaries, followed by employing the use of the [**Pandas**](https://pandas.pydata.org/) software to manipulate the data, allowing visualisation of the data through [**Matplotlib**](https://matplotlib.org/). The latter half of the analsis will be an exploration into the data visualisation capabilities of [**Seaborn**](https://seaborn.pydata.org/), a 'Python data visualisation library based on Matplotlib'.
+To begin the analysis of this data set we will look at some descriptive summaries, followed by employing the use of the [**Pandas**](https://pandas.pydata.org/) software to manipulate the data, allowing visualisation of the data through [**Matplotlib**](https://matplotlib.org/). The latter half of the analysis will be an exploration into the data visualisation capabilities of [**Seaborn**](https://seaborn.pydata.org/), a 'Python data visualisation library based on Matplotlib'.
 
 ### Set-up
 
 Before we begin writing code for the analyses that we would like to explore we need to set-up our environment: 
 
-1. Suggested tools to download/sign-up to to run this program:
+1. Suggested tools to download/sign-up to run this program:
 * [Visual Studio Code (VSC)](https://code.visualstudio.com/) 
 * [Python 3.8 or higher](https://www.python.org/)
 * [GitHub website](https://github.com/)
@@ -65,7 +65,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ~~~
 
-4. Download the Iris data set [here](https://archive.ics.uci.edu/ml/datasets/iris) to the same folder you will save your analsyis program, read it into the program, and assign the column names<sup>9</sup>:
+4. Download the Iris data set [here](https://archive.ics.uci.edu/ml/datasets/iris) to the same folder you will save your analysis program, read it into the program, and assign the column names<sup>9</sup>:
 ~~~
 path = '../pands-project/'
 filename = path + 'iris_data.csv'
@@ -94,7 +94,7 @@ versicolor = iris_data.loc[iris_data['species']=='Iris-versicolor']
  * the ```info``` command output a concise summary of the data set<sup>15</sup>
 
 ~~~
-# create a text file to ouptut a summary of the variables
+# create a text file to output a summary of the variables
 print('Summary statistics for each variable (cm) in the Iris Dataset:\n', file=open('irisVariablesSummary.txt', 'w'))
 # append a stats summary of the variables
 summary_all = iris_data.describe()
@@ -125,7 +125,7 @@ plt.text(-3.5, 105,'Iris dataset: Histograms of each variable',
                 )
 ~~~
 
-* Finally we output the plot to a png file
+* Finally, we output the plot to a png file
 ~~~
 plt.savefig("iris_data_Histogram.png")
 ~~~
@@ -138,13 +138,13 @@ We can see that sepal length and width follow a normal distribution whereas peta
 
 ### Task 3: Output a scatter plot of each pair of variables (to a png file)
 
-* This program outputs a scatter plot of each pair of variables (and saves it ot a png file within the same folder)
+* This program outputs a scatter plot of each pair of variables (and saves it to a png file within the same folder)
 * First we customise the figure to contain 4 subplots (1 for each variable) and define the size<sup>20,21,22</sup>
 ~~~
 fig,ax = plt.subplots(4, figsize=(10,10))
 ~~~
 
-* Next we instruct the program to output the first plot: customised for colors and with axis labels set<sup>23,24,25</sup> 
+* Next we instruct the program to output the first plot: customised for colours and with axis labels set<sup>23,24,25</sup> 
 * We also add the figure title at this point<sup>26</sup> 
 
 ~~~
@@ -159,7 +159,7 @@ ax[0].set_title('Iris dataset: Scatter plots of each pair of variables',
 
 ~~~
 
-* Next we ouput the remaining scatterplots within the same figure
+* Next we output the remaining scatterplots within the same figure
 
 ~~~ 
 ax[1].scatter(x = iris_data['sepal_width'], y = iris_data['petal_length'], color = 'blueviolet', edgecolors = "black")
@@ -175,7 +175,7 @@ ax[3].set_xlabel("Sepal Length", weight='bold')
 ax[3].set_ylabel("Sepal Width", weight='bold')
 ~~~
 
-* Apply a tight layout to automatically adjust the subplots to fit in the fugure area<sup>27</sup> 
+* Apply a tight layout to automatically adjust the subplots to fit in the figure area<sup>27</sup> 
 ~~~
 plt.tight_layout()
 ~~~
@@ -212,7 +212,7 @@ plt.savefig("iris_data_Heatmap.png")
 
 * This program runs a pairs plot of the iris data set using the Seaborn software
 * They are usually run to identify trends in the data that might require a follow-up analysis
-* The plot output for this one is coloured using the command ```hue```which assigns a different colour to each of the named species<sup>29,31</sup> 
+* The plot output for this one is coloured using the command ```hue``` which assigns a different colour to each of the named species<sup>29,31</sup> 
 
 ~~~
 sns.set(style='ticks', color_codes=True)
@@ -236,7 +236,7 @@ sns.set(style="whitegrid", palette="Paired")
 f, axes = plt.subplots(2, 2, figsize=(16, 16)) 
 ~~~
 
-* Next we add in the attributes of each plot and orientate then to the 2D grid figure<sup>32,33,34</sup>, add a title and output oto a png file
+* Next we add in the attributes of each plot and orientate then to the 2D grid figure<sup>32,33,34</sup>, add a title and output to a png file
 
 ~~~
 sns.boxplot(x='species', y='petal_length',hue = 'species',data=iris_data, ax=axes[0,0])
@@ -255,7 +255,7 @@ plt.savefig("iris_data_Boxplot.png")
 
 ### Summary
 
-Overall, the Iris data set is a great starter data set for data visualisation beginners. It is readily available, the data is clean and it contains no missing datapoints, i.e. it doesn't require much manipulation to begin writing code for analysis. 
+Overall, the Iris data set is a great starter data set for data visualisation beginners. It is readily available, the data is clean, and it contains no missing datapoints, i.e. it doesn't require much manipulation to begin writing code for analysis. 
 
 The plots explored in this analysis are only a fraction of what can be achieved using the tools employed; Pandas, Matplotlib, and the very easy to use, Seaborn software. Others have explored the data set using violin plots, factor plots, joint plots, and there also countless ways to customise the output for the variables you want to look at individually, or jointly - allowing you to play the music, instead of just showing the notes.
 
